@@ -11,7 +11,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git@sequencemedia.github.com:sequencemedia/pbkdf2.git"
+    "url": "git@github.com:sequencemedia/pbkdf2.git"
   },
   "scripts": {
     "lint": "cross-env NODE_ENV=production eslint . --ext .mjs --ext .cjs",
@@ -19,7 +19,8 @@
     "test": "cross-env NODE_ENV=test mocha tests --recursive --verbose --color",
     "compare": "cross-env NODE_ENV=production node scripts/compare.mjs",
     "hash": "cross-env NODE_ENV=production node scripts/hash.mjs",
-    "salt": "cross-env NODE_ENV=production node scripts/salt.mjs"
+    "salt": "cross-env NODE_ENV=production node scripts/salt.mjs",
+    "prepare": "husky install"
   },
   "dependencies": {
     "debug": "^4.3.4",
@@ -30,6 +31,8 @@
     "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.20.2",
+    "@sequencemedia/hooks": "^1.0.314",
+    "@types/node": "^18.11.18",
     "chai": "^4.3.7",
     "core-js": "^3.27.2",
     "cross-env": "^7.0.3",
@@ -38,6 +41,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
     "mocha": "^10.2.0"
   },
   "imports": {
