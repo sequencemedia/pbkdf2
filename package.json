@@ -1,0 +1,47 @@
+{
+  "name": "@sequencemedia/pbkdf2",
+  "version": "1.0.0",
+  "main": "./index.mjs",
+  "type": "module",
+  "author": {
+    "name": "Jonathan Perry for Sequence Media Limited",
+    "email": "sequencemedia@sequencemedia.net",
+    "url": "http://sequencemedia.net"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@sequencemedia.github.com:sequencemedia/pbkdf2.git"
+  },
+  "scripts": {
+    "lint": "cross-env NODE_ENV=production eslint . --ext .mjs --ext .cjs",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "cross-env NODE_ENV=test mocha tests --recursive --verbose --color",
+    "compare": "cross-env NODE_ENV=production node scripts/compare.mjs",
+    "hash": "cross-env NODE_ENV=production node scripts/hash.mjs",
+    "salt": "cross-env NODE_ENV=production node scripts/salt.mjs"
+  },
+  "dependencies": {
+    "debug": "^4.3.4",
+    "yargs-parser": "^21.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "chai": "^4.3.7",
+    "core-js": "^3.27.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.32.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "mocha": "^10.2.0"
+  },
+  "imports": {
+    "#config/*": "./config/*.mjs",
+    "#utils/*": "./utils/*.mjs"
+  }
+}
