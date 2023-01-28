@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/pbkdf2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./index.mjs",
   "type": "module",
   "author": {
