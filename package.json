@@ -1,6 +1,15 @@
 {
   "name": "@sequencemedia/pbkdf2",
   "version": "1.0.6",
+  "keywords": [
+    "pbkdf2",
+    "crypto",
+    "compare",
+    "hash",
+    "salt",
+    "ecmascript",
+    "typescript"
+  ],
   "main": "./index.mjs",
   "type": "module",
   "author": {
