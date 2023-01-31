@@ -40,6 +40,6 @@ hash(password, { salt, iterations, keylen, digest })
   .then((buffer) => {
     console.log(fromBufferToBase64(buffer))
   })
-  .catch(() => {
-    console.error('💩')
+  .catch(({ message }) => {
+    console.error(`💩 - ${message}`)
   })

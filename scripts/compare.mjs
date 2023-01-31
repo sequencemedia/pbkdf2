@@ -43,6 +43,6 @@ compare(password, { hash, salt, iterations, keylen, digest })
   .then((isValid) => {
     console.log(isValid ? '👍' : '👎')
   })
-  .catch(() => {
-    console.error('💩')
+  .catch(({ message }) => {
+    console.error(`💩 - ${message}`)
   })

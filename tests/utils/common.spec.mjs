@@ -21,27 +21,27 @@ describe('`#utils/common`', () => {
     describe('User 1', () => {
       it('returns a string', () => {
         const BASE64 = 'YzFjMTY4MmMyMWE4MjFkYjRhNWE5YjJmNDY0OTUzM2Q='
-        const UTF8 = 'c1c1682c21a821db4a5a9b2f4649533d'
+        const ASCII = 'c1c1682c21a821db4a5a9b2f4649533d'
 
-        return expect(fromBase64(BASE64)).to.equal(UTF8)
+        return expect(fromBase64(BASE64)).to.equal(ASCII)
       })
     })
 
     describe('User 2', () => {
       it('returns a string', () => {
         const BASE64 = 'MDI2OGM0MDU4NWJiOTgxNWEyYzQwN2RkYjM1YTY5YWU='
-        const UTF8 = '0268c40585bb9815a2c407ddb35a69ae'
+        const ASCII = '0268c40585bb9815a2c407ddb35a69ae'
 
-        return expect(fromBase64(BASE64)).to.equal(UTF8)
+        return expect(fromBase64(BASE64)).to.equal(ASCII)
       })
     })
 
     describe('User 3', () => {
       it('returns a string', () => {
         const BASE64 = 'ZDI3OTZmZWU3M2I3M2Y3MTgxMmYyNGM3MjU4NDE2NDM='
-        const UTF8 = 'd2796fee73b73f71812f24c725841643'
+        const ASCII = 'd2796fee73b73f71812f24c725841643'
 
-        return expect(fromBase64(BASE64)).to.equal(UTF8)
+        return expect(fromBase64(BASE64)).to.equal(ASCII)
       })
     })
   })
@@ -49,28 +49,28 @@ describe('`#utils/common`', () => {
   describe('toBase64()', () => {
     describe('User 1', () => {
       it('returns a string', () => {
-        const UTF8 = 'c1c1682c21a821db4a5a9b2f4649533d'
+        const ASCII = 'c1c1682c21a821db4a5a9b2f4649533d'
         const BASE64 = 'YzFjMTY4MmMyMWE4MjFkYjRhNWE5YjJmNDY0OTUzM2Q='
 
-        return expect(toBase64(UTF8)).to.equal(BASE64)
+        return expect(toBase64(ASCII)).to.equal(BASE64)
       })
     })
 
     describe('User 2', () => {
       it('returns a string', () => {
-        const UTF8 = '0268c40585bb9815a2c407ddb35a69ae'
+        const ASCII = '0268c40585bb9815a2c407ddb35a69ae'
         const BASE64 = 'MDI2OGM0MDU4NWJiOTgxNWEyYzQwN2RkYjM1YTY5YWU='
 
-        return expect(toBase64(UTF8)).to.equal(BASE64)
+        return expect(toBase64(ASCII)).to.equal(BASE64)
       })
     })
 
     describe('User 3', () => {
       it('returns a string', () => {
-        const UTF8 = 'd2796fee73b73f71812f24c725841643'
+        const ASCII = 'd2796fee73b73f71812f24c725841643'
         const BASE64 = 'ZDI3OTZmZWU3M2I3M2Y3MTgxMmYyNGM3MjU4NDE2NDM='
 
-        return expect(toBase64(UTF8)).to.equal(BASE64)
+        return expect(toBase64(ASCII)).to.equal(BASE64)
       })
     })
   })
