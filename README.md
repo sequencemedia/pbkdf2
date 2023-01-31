@@ -23,7 +23,13 @@ Etc.
 The password is expected as the first argument, while the others are fields on a params object
 
 ```javascript
-const isValid = await compare(password, { hash, salt, iterations, keylen, digest })
+const isValid = await compare(password, {
+  hash,
+  salt,
+  iterations,
+  keylen,
+  digest
+})
 ```
 
 ### `hash`
@@ -31,16 +37,22 @@ const isValid = await compare(password, { hash, salt, iterations, keylen, digest
 As with `compare`, the password is expected as the first argument, while the others are fields on a params object (except for `hash` which can of course be omitted)
 
 ```javascript
-const value = await hash(password, { salt, iterations, keylen, digest })
+const value = await hash(password, {
+  hash,
+  iterations,
+  keylen,
+  digest
+})
 ```
 
 ### `salt`
 
-An `async` wrapper around `crypto.randomBytes` to _generate_ a salt from the salt size
+An `async` wrapper around `crypto.randomBytes()` to _generate_ a salt from the salt size
 
 ```javascript
 const value = await salt(size)
 ```
+
 ## In the shell
 
 Scripts are exposed to `npm` in the package and each script can of course be invoked from the command line directly in the shell
