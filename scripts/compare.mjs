@@ -3,8 +3,7 @@
 import argsMap from '#utils/args-map'
 import compare from '#utils/compare'
 import {
-  fromBase64ToBuffer,
-  fromBase64
+  fromBase64ToBuffer
 } from '#utils/common'
 import {
   ITERATIONS,
@@ -19,7 +18,7 @@ if (!argsMap.has('hash')) throw new Error('Parameter `hash` is required')
 const hash = fromBase64ToBuffer(argsMap.get('hash'))
 
 if (!argsMap.has('salt')) throw new Error('Parameter `salt` is required')
-const salt = fromBase64(argsMap.get('salt'))
+const salt = fromBase64ToBuffer(argsMap.get('salt'))
 
 const iterations = (
   argsMap.has('iterations')
@@ -43,6 +42,6 @@ compare(password, { hash, salt, iterations, keylen, digest })
   .then((isValid) => {
     console.log(isValid ? '👍' : '👎')
   })
-  .catch(() => {
-    console.error('💩')
+  .catch(({ message }) => {
+    console.error(`💩 - ${message}`)
   })

@@ -1,6 +1,15 @@
 {
   "name": "@sequencemedia/pbkdf2",
-  "version": "1.0.6",
+  "version": "1.0.9",
+  "keywords": [
+    "pbkdf2",
+    "crypto",
+    "compare",
+    "hash",
+    "salt",
+    "ecmascript",
+    "typescript"
+  ],
   "main": "./index.mjs",
   "type": "module",
   "author": {
@@ -14,12 +23,12 @@
     "url": "git@github.com:sequencemedia/pbkdf2.git"
   },
   "scripts": {
-    "lint": "cross-env NODE_ENV=production eslint . --ext .mjs --ext .cjs",
+    "lint": "eslint . --ext .mjs --ext .cjs",
     "lint:fix": "npm run lint -- --fix",
     "test": "cross-env NODE_ENV=test mocha tests --recursive --verbose --color",
-    "compare": "cross-env NODE_ENV=production node scripts/compare.mjs",
-    "hash": "cross-env NODE_ENV=production node scripts/hash.mjs",
-    "salt": "cross-env NODE_ENV=production node scripts/salt.mjs",
+    "compare": "node scripts/compare.mjs",
+    "hash": "node scripts/hash.mjs",
+    "salt": "node scripts/salt.mjs",
     "prepare": "husky install"
   },
   "dependencies": {

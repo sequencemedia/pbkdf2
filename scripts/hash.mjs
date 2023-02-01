@@ -2,7 +2,7 @@
 
 import argsMap from '#utils/args-map'
 import {
-  fromBase64,
+  fromBase64ToBuffer,
   fromBufferToBase64
 } from '#utils/common'
 import hash from '#utils/hash'
@@ -16,7 +16,7 @@ if (!argsMap.has('password')) throw new Error('Parameter `password` is required'
 const password = argsMap.get('password')
 
 if (!argsMap.has('salt')) throw new Error('Parameter `salt` is required')
-const salt = fromBase64(argsMap.get('salt'))
+const salt = fromBase64ToBuffer(argsMap.get('salt'))
 
 const iterations = (
   argsMap.has('iterations')
@@ -40,6 +40,6 @@ hash(password, { salt, iterations, keylen, digest })
   .then((buffer) => {
     console.log(fromBufferToBase64(buffer))
   })
-  .catch(() => {
-    console.error('💩')
+  .catch(({ message }) => {
+    console.error(`💩 - ${message}`)
   })
