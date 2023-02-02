@@ -34,7 +34,7 @@ npm run compare -- \
   --digest 'sha256' \
   --keylen 64
 
-# the-user-3
+# the-user-3 (UMS)
 npm run compare -- \
   --password '@^EJmdlkt5A#' \
   --hash 'bV76sVqsM0doKBFnaHsZQC9OgcVnF/+gzkG7HFXdD7jyQdN1PqCVijyXKMijmYQPWJohi5f7sVxhoLJ5kf8aQA==' \

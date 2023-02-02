@@ -13,8 +13,10 @@ A password can be compared with a `hash` and `salt` (and the number of `iteratio
 The ES functions expect the same argument types as the underlying Node utilities
 
 - The `hash` is a `Buffer`
-- The `salt` is a `String`
+- The `salt` is a `Buffer`
 - `iterations` is a `Number`
+- `keylen` is a `Number`
+- `digest` is a `String`
 
 Etc.
 
