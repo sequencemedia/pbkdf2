@@ -49,7 +49,7 @@ const value = await hash(password, {
 
 ### `salt`
 
-An `async` wrapper around `crypto.randomBytes()` to _generate_ a salt from the salt size
+An `async` wrapper around `crypto.randomBytes()` to _generate_ a salt of the salt size
 
 ```javascript
 const value = await salt(size)
