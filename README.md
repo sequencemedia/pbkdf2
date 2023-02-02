@@ -91,8 +91,8 @@ npm run compare -- \
 
 Etc.
 
-- The `hash` is decoded to a `Buffer`
-- The `salt` is transformed from a _Base64_ into an _ASCII_ `String`
+- The `hash` is decoded from a _Base64_ `String` to a `Buffer`
+- The `salt` is decoded from a _Base64_ `String` to a `Buffer`
 
 ## Tests
 
