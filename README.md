@@ -80,7 +80,7 @@ npm run compare -- \
 ```
 
 ```bash
-./scripts/compare.mjs \
+node ./scripts/compare.mjs \
   --password <PASSWORD> \
   --hash <HASH> \
   --salt <SALT> \
