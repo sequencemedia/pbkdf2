@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/pbkdf2",
-  "version": "1.0.52",
+  "version": "1.0.53",
   "keywords": [
     "pbkdf2",
     "crypto",
