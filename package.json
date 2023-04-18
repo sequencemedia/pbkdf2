@@ -12,6 +12,7 @@
   ],
   "main": "./index.mjs",
   "type": "module",
+  "types": "./index.d.mts",
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "sequencemedia@sequencemedia.net",
