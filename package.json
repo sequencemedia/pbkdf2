@@ -33,15 +33,15 @@
     "test": "cross-env NODE_ENV=test mocha tests --recursive --verbose --color"
   },
   "dependencies": {
-    "debug": "^4.3.4",
+    "debug": "^4.3.5",
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",
     "@babel/eslint-parser": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
-    "@sequencemedia/hooks": "^1.0.493",
-    "@types/node": "^20.12.13",
+    "@sequencemedia/hooks": "^1.0.494",
+    "@types/node": "^20.13.0",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
     "cross-env": "^7.0.3",
