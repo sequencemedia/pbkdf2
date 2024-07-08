@@ -4,7 +4,7 @@ import {
 import compare from '#utils/compare'
 
 describe('`#utils/compare`', () => {
-  xdescribe('compare', () => it('is a function', () => expect(compare).to.be.a('function')))
+  describe('compare', () => it('is a function', () => expect(compare).to.be.a('function')))
 
   describe('compare()', () => {
     const ITERATIONS = 32768
