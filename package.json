@@ -39,13 +39,13 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
-    "@sequencemedia/eslint-config-standard": "^0.0.69",
-    "@sequencemedia/hooks": "^1.0.560",
-    "@types/node": "^22.5.5",
+    "@sequencemedia/eslint-config-standard": "^0.0.70",
+    "@sequencemedia/hooks": "^1.0.561",
+    "@types/node": "^22.7.4",
     "chai": "^5.1.1",
     "core-js": "^3.38.1",
     "cross-env": "^7.0.3",
-    "eslint": "^9.10.0",
+    "eslint": "^9.11.1",
     "globals": "^15.9.0",
     "husky": "^9.1.6",
     "mocha": "^10.7.3"
