@@ -37,10 +37,10 @@
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.9",
-    "@babel/preset-env": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
     "@sequencemedia/eslint-config-standard": "^0.0.77",
-    "@types/node": "^22.7.9",
+    "@types/node": "^22.8.1",
     "chai": "^5.1.2",
     "core-js": "^3.38.1",
     "cross-env": "^7.0.3",
