@@ -53,8 +53,8 @@
   },
   "imports": {
     "#config/*": "./config/*.mjs",
-    "#pbkdf2/*": "./src/*.mjs",
     "#pbkdf2": "./src/index.mjs",
+    "#pbkdf2/*": "./src/*.mjs",
     "#pbkdf2/common": "./src/common/index.mjs"
   }
 }
