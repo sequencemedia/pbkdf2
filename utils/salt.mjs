@@ -3,11 +3,9 @@ import {
 } from 'node:crypto'
 
 /**
- * function salt (size, complete = () => {}) {
- *   randomBytes(size, complete)
- * }
+ * @param {number} size
+ * @returns {Promise<Buffer>}
  */
-
 export default function salt (size) {
   return (
     new Promise((resolve, reject) => {
