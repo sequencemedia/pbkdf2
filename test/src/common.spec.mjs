@@ -5,9 +5,9 @@ import {
 import {
   fromBase64ToBuffer,
   fromBufferToBase64
-} from '#utils/common'
+} from '#pbkdf2/common'
 
-describe('`#utils/common`', () => {
+describe('`#pbkdf2/common`', () => {
   describe('fromBase64ToBuffer', () => it('is a function', () => expect(fromBase64ToBuffer).to.be.a('function')))
 
   describe('fromBufferToBase64', () => it('is a function', () => expect(fromBufferToBase64).to.be.a('function')))

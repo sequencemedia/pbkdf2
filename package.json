@@ -10,9 +10,9 @@
     "ecmascript",
     "typescript"
   ],
-  "main": "./index.mjs",
+  "main": "./src/index.mjs",
   "type": "module",
-  "types": "./index.d.mts",
+  "types": "./src/index.d.mts",
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "sequencemedia@sequencemedia.net",
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@sequencemedia/eslint-config-standard": "^0.2.35",
+    "@sequencemedia/eslint-config-typescript": "^0.1.50",
     "@types/chai": "^5.0.1",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.13.5",
@@ -45,12 +46,15 @@
     "chai": "^5.2.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.21.0",
+    "eslint-plugin-jsdoc": "^50.6.3",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
     "mocha": "^11.1.0"
   },
   "imports": {
     "#config/*": "./config/*.mjs",
-    "#utils/*": "./utils/*.mjs"
+    "#pbkdf2/*": "./src/*.mjs",
+    "#pbkdf2": "./src/index.mjs",
+    "#pbkdf2/common": "./src/common/index.mjs"
   }
 }

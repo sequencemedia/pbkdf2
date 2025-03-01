@@ -1,4 +1,4 @@
-import argsMap from '#utils/args-map'
+import argsMap from './args-map.mjs'
 
 /**
  *  @type {number}

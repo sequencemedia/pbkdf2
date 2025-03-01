@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import argsMap from '#utils/args-map'
+import argsMap from '#config/args-map'
 import compare from '#utils/compare'
 import {
   fromBase64ToBuffer

@@ -1,6 +1,5 @@
 /**
  *  @typedef {import('node:crypto').BinaryLike} BinaryLike
- *
  *  @typedef {{
  *    salt: BinaryLike,
  *    hash: Buffer,
@@ -8,13 +7,12 @@
  *    keylen?: number,
  *    digest?: string
  *  }} CompareParams
- *
  *  @typedef {{
  *    salt: BinaryLike,
  *    iterations?: number,
  *    keylen?: number,
  *    digest?: string
- * }} HashParams
+ *  }} HashParams
  */
 
 import {

@@ -5,7 +5,7 @@
  *    iterations?: number,
  *    keylen?: number,
  *    digest?: string
- * }} HashParams
+ *  }} HashParams
  */
 
 import {

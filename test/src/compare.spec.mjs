@@ -1,9 +1,9 @@
 import {
   expect
 } from 'chai'
-import compare from '#utils/compare'
+import compare from '#pbkdf2/compare'
 
-describe('`#utils/compare`', () => {
+describe('`#pbkdf2/compare`', () => {
   describe('compare', () => it('is a function', () => expect(compare).to.be.a('function')))
 
   describe('compare()', () => {

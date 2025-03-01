@@ -1,10 +1,20 @@
-import merge from '@sequencemedia/eslint-config-standard/merge'
 import globals from 'globals'
+import standard from '@sequencemedia/eslint-config-standard/merge'
+import typescript from '@sequencemedia/eslint-config-typescript/merge'
+import jsdoc from 'eslint-plugin-jsdoc'
 
-export default (
-  merge({
+export default [
+  jsdoc.configs['flat/recommended'],
+  {
+    languageOptions: {
+      globals: {
+        ArrayBufferLike: 'readonly'
+      }
+    }
+  },
+  ...standard({
     files: [
-      '**/*.{cjs,mjs}'
+      '**/*.{mjs,cjs,mts,cts}'
     ],
     ignores: [
       'test'
@@ -14,17 +24,38 @@ export default (
         ...globals.node
       }
     }
+  }),
+  ...typescript({
+    files: [
+      '**/*.{mts,cts}'
+    ],
+    ignores: [
+      'test'
+    ],
+    languageOptions: {
+      globals: {
+        ...globals.node
+      }
+    }
+  }),
+  ...standard({
+    files: [
+      'test/**/*.{mjs,cjs,mts,cts}'
+    ],
+    languageOptions: {
+      globals: {
+        ...globals.mocha
+      }
+    }
+  }),
+  ...typescript({
+    files: [
+      'test/**/*.{mts,cts}'
+    ],
+    languageOptions: {
+      globals: {
+        ...globals.mocha
+      }
+    }
   })
-    .concat(
-      merge({
-        files: [
-          'test/**/*.{cjs,mjs}'
-        ],
-        languageOptions: {
-          globals: {
-            ...globals.mocha
-          }
-        }
-      })
-    )
-)
+]
