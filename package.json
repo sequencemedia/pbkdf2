@@ -37,15 +37,15 @@
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
-    "@sequencemedia/eslint-config-standard": "^0.2.43",
-    "@sequencemedia/eslint-config-typescript": "^0.1.63",
+    "@sequencemedia/eslint-config-standard": "^0.2.44",
+    "@sequencemedia/eslint-config-typescript": "^0.1.64",
     "@types/chai": "^5.2.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.13.11",
     "@types/yargs-parser": "^21.0.3",
     "chai": "^5.2.0",
     "cross-env": "^7.0.3",
-    "eslint": "^9.22.0",
+    "eslint": "^9.23.0",
     "eslint-plugin-jsdoc": "^50.6.8",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
