@@ -19,9 +19,9 @@ import {
 } from '#config/compare'
 
 /**
- * @param {BinaryLike} password
- * @param {HashParams} params
- * @returns {Promise<Buffer>}
+ *  @param {BinaryLike} password
+ *  @param {HashParams} params
+ *  @returns {Promise<Buffer>}
  */
 export default function hash (password, {
   salt,

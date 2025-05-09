@@ -3,8 +3,8 @@ import {
 } from 'node:crypto'
 
 /**
- * @param {number} size
- * @returns {Promise<Buffer>}
+ *  @param {number} size
+ *  @returns {Promise<Buffer>}
  */
 export default function salt (size) {
   return (

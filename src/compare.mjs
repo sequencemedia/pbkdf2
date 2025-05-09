@@ -22,9 +22,9 @@ import {
 import hash from './hash.mjs'
 
 /**
- * @param {BinaryLike} password
- * @param {CompareParams} params
- * @returns {Promise<boolean>}
+ *  @param {BinaryLike} password
+ *  @param {CompareParams} params
+ *  @returns {Promise<boolean>}
  */
 export default async function compare (password, {
   hash: alpha,
