@@ -37,8 +37,8 @@
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
-    "@sequencemedia/eslint-config-standard": "^0.2.56",
-    "@sequencemedia/eslint-config-typescript": "^0.1.88",
+    "@sequencemedia/eslint-config-standard": "^0.2.57",
+    "@sequencemedia/eslint-config-typescript": "^0.1.89",
     "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.15.17",
