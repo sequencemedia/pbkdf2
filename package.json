@@ -33,7 +33,7 @@
     "test": "cross-env NODE_ENV=test mocha test --recursive --verbose --color"
   },
   "dependencies": {
-    "debug": "^4.4.0",
+    "debug": "^4.4.1",
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
