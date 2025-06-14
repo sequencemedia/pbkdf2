@@ -41,15 +41,15 @@
     "@sequencemedia/eslint-config-typescript": "^0.1.101",
     "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.15.30",
+    "@types/node": "^24.0.1",
     "@types/yargs-parser": "^21.0.3",
     "chai": "^5.2.0",
     "cross-env": "^7.0.3",
-    "eslint": "^9.28.0",
-    "eslint-plugin-jsdoc": "^50.7.1",
+    "eslint": "^9.29.0",
+    "eslint-plugin-jsdoc": "^51.0.1",
     "globals": "^16.2.0",
     "husky": "^9.1.7",
-    "mocha": "^11.5.0"
+    "mocha": "^11.6.0"
   },
   "imports": {
     "#config/*": "./config/*.mjs",
