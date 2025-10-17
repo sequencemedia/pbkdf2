@@ -41,7 +41,7 @@
     "@sequencemedia/eslint-config-typescript": "^0.1.159",
     "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^24.7.2",
+    "@types/node": "^24.8.1",
     "@types/yargs-parser": "^21.0.3",
     "chai": "^6.2.0",
     "cross-env": "^10.1.0",
