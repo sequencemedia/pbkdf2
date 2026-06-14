@@ -21,7 +21,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sequencemedia/pbkdf2.git"
+    "url": "git+ssh://git@github.com/sequencemedia/pbkdf2.git"
   },
   "scripts": {
     "compare": "node scripts/compare.mjs",
