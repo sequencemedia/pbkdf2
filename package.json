@@ -28,7 +28,7 @@
     "hash": "node scripts/hash.mjs",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "prepare": "husky",
+    "prepare": "node husky.mjs",
     "salt": "node scripts/salt.mjs",
     "test": "cross-env NODE_ENV=test mocha test --recursive --verbose --color"
   },
